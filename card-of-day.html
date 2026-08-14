@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Карта дня — Людмила Астрология</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">Людмила Астрология</a>
+      <nav class="nav">
+        <a href="index.html#about">Обо мне</a>
+        <a href="index.html#services">Услуги</a>
+        <a href="index.html#contacts">Контакты</a>
+        <a href="functions.html" class="nav-functions">Подсказки</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section card-day-container">
+      <div class="container">
+        <h2>Карта дня</h2>
+        <p class="hint-text">Нажмите на кнопку, чтобы вытянуть карту.</p>
+        <div id="cardDisplay" class="card-display">
+          <img src="images/tarot_card_back.png" alt="Рубашка карты" class="card-back">
+        </div>
+        <p id="cardMeaning" class="card-day-meaning"></p>
+        <button onclick="drawCard()" class="btn-primary draw-btn">Вытянуть карту</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Людмила Астрология</p>
+    </div>
+  </footer>
+
+  <script src="js/cards.js"></script>
+  <script src="js/card.js"></script>
+</body>
+</html>
